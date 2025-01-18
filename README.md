@@ -1,12 +1,13 @@
 # basic_blog_website
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="View the Canva design for a white, teal, and dark blue corporate website template. Created by Nitisha Gupta.">
     <title>Corporate Website Design - Canva</title>
-    
+
     <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7G9RHH6MV"></script>
     <script>
@@ -21,49 +22,82 @@
     <!-- Stylesheet -->
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #e0f7fa, #004d40);
+            background-color: #f9f9f9;
             color: #333;
         }
 
         header {
-            background-color: #004d40;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 1.8rem;
+            color: #333;
         }
 
         nav {
             display: flex;
-            justify-content: center;
-            background-color: #00695c;
-            padding: 10px 0;
+            gap: 15px;
         }
 
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            font-weight: 500;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #b2dfdb;
+            color: #0073e6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #0073e6;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .button {
+            background-color: white;
+            color: #0073e6;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hero .button:hover {
+            background-color: #005bb5;
+            color: white;
         }
 
         .container {
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 20px;
-            text-align: center;
         }
 
         .embed-container {
@@ -71,10 +105,10 @@
             width: 100%;
             height: 0;
             padding-top: 56.25%; /* Maintain 16:9 Aspect Ratio */
-            box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
             margin: 2rem 0;
             overflow: hidden;
             border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .embed-container iframe {
@@ -87,11 +121,11 @@
         }
 
         footer {
-            background-color: #004d40;
-            color: white;
+            background-color: #ffffff;
+            color: #333;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 2rem;
+            padding: 15px 10%;
+            border-top: 1px solid #ddd;
         }
 
         footer p {
@@ -100,53 +134,35 @@
         }
 
         footer a {
-            color: #b2dfdb;
+            color: #0073e6;
             text-decoration: none;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 20px 10px;
-            background-color: #004d40;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #00695c;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Corporate Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
+    <section class="hero">
+        <h2>Welcome to Our Corporate Website</h2>
+        <p>Discover modern and professional designs that elevate your business.</p>
+        <button class="button">Get Started</button>
+    </section>
 
     <div class="container">
-        <h2>Embedded Canva Design</h2>
-        <p>Explore our modern corporate website design with a professional and sleek look.</p>
+        <h2>Our Design Showcase</h2>
+        <p>Explore our sleek corporate templates designed for success.</p>
 
         <div class="embed-container">
             <iframe loading="lazy" title="Canva Design - Corporate Website"
@@ -154,14 +170,6 @@
                 allowfullscreen>
             </iframe>
         </div>
-
-        <div class="button-container">
-            <a class="button" href="#">Learn More</a>
-            <a class="button" href="#">Sign Up</a>
-            <a class="button" href="#">Get Started</a>
-        </div>
-
-        <a class="button" href="https://www.canva.com/design/DAGcXnXl32I/G-FWTggHSlFMMTcXdVB2fw/view?utm_content=DAGcXnXl32I&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener noreferrer">View Full Design</a>
     </div>
 
     <footer>
@@ -169,3 +177,4 @@
     </footer>
 </body>
 </html>
+
